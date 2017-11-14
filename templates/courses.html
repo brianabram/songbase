@@ -1,0 +1,12 @@
+{% extends "home-base.html" %}
+{% block title %}Courses{% endblock %}
+{% block head %}
+  {{super()}}
+{% endblock %}
+{% block page_content %}
+
+<ul>
+{% for course in courses %}
+<li> {{course}} </li>
+{% endfor %}
+</ul>
